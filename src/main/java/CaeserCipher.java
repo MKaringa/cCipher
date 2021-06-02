@@ -16,5 +16,16 @@ public class CaeserCipher {
             return shiftKey;
         }
 
+        public int shiftKeyForEncryption(){
+            int key = getShiftKey();
+            if (key > 26){
+                key = key % 26;
+            }else if (key < 0){
+                key = (key % 26) + 26;
+            }
+            return key;
+        }
+
+
     }
 }

@@ -6,5 +6,11 @@ public class CaeserCipher {
     public CaeserCipher(String message, int key){
         this.theMessage = message;
         this.shiftKey = key;
+
+        public String getTheMessage() {
+            return theMessage;
+
+        }
+
     }
 }

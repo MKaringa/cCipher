@@ -12,5 +12,9 @@ public class CaeserCipher {
 
         }
 
+        public int getShiftKey() {
+            return shiftKey;
+        }
+
     }
 }

@@ -15,4 +15,10 @@ public class CaeserCipherTest {
         assertEquals("hi",testCaesarCipher.getshiftKey());
     }
 
+    @Test
+    public void newCaesarCipher_shiftKeyForEncryption_3() {
+        CaeserCipher testCaesarCipher = new CaeserCipher("good",5);
+        assertEquals("hi",testCaesarCipher.shiftKeyForEncryption());
+    }
+
 }

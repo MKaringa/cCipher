@@ -63,6 +63,42 @@ public class CaeserCipher {
             return cipherText;
         }
 
+        public String messageDecryption() {
+            int shiftedKey = shiftKeyForEncryption();
+            String message = messageEncryption();
+            String decryptedText = "";
+
+            int length = getTheMessage().length();
+            for (int i = 0; i < length; i++) {
+                char ch = message.charAt(i);
+                if (Character.isLetter(ch)) {
+                    if (Character.isLowerCase(ch)) {
+                        char c = (char) (ch - shiftKey);
+                        if (c <'a') {
+                            decryptedText += (char) (ch + (26 - shiftKey));
+
+                        }
+                        else{
+                            decryptedText += c;
+                        }
+
+                    } else if (Character.isUpperCase(ch)) {
+                        char c = (char) (ch - shiftKey);
+                        if (c < 'A') {
+                            decryptedText += (char) (ch + (26 - shiftKey));
+
+                        }else{
+                            decryptedText += c;
+
+                        }
+
+                    }
+
+                } else decryptedText += ch;
+
+            }
+            return decryptedText;
+
 
 
     }

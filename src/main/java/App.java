@@ -21,5 +21,12 @@ public class App {
                 System.out.println("Your message encrypted is : " + encryptedMessage);
                 System.out.println("Your message decrypted is : " + decryptedMessage);
 
+            } else if(response.equals("no")){
+                cipherActive = false;
+            } else{
+                System.out.println("Please choose a valid option");
+            }
+        }
+
             }
         }

@@ -9,4 +9,10 @@ public class CaeserCipherTest {
         assertEquals("hi",testCaesarCipher.getTheMessage());
     }
 
+    @Test
+    public void newCaesarCipher_getshiftKey_3() {
+        CaeserCipher testCaesarCipher = new CaeserCipher("good",5);
+        assertEquals("hi",testCaesarCipher.getshiftKey());
+    }
+
 }

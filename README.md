@@ -4,12 +4,9 @@ A Caesar Cipher is a basic Java application that encrypts and decrypts messages.
 # Author
 ## Mungai Karinga
 
-#
-## Support
-The Delani Studio website is compatible with devices of all sizes and all OS's and constitent improvents are being made.
 
 # Setup
-Clone this repo https://github.com/MKaringa/delaniStudiios to your desktop and run npm install to install all the dependencies.
+Clone this repo https://github.com/MKaringa/cCipher to your desktop and run it with your prefferd editor.
 
 ## BDD
 . The system prompts the user to start or stop the program
